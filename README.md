@@ -2,14 +2,15 @@
 
 **AI-Powered Freight Cost Prediction & Invoice Risk Detection**
 
-[![Live App](https://img.shields.io/badge/Live-Streamlit-FF4B4B)](https://mayuresh0711-vendor-invoice-intelligence-system-app-sszyjb.streamlit.app/)
-[![Python 3.8+](https://img.shields.io/badge/Python-3.8+-blue)]()
+[![Live App](https://img.shields.io/badge/Live-Streamlit-FF4B4B)](https://vendorinvoiceintelligenceapp-8fvv4app6c2npeq8qz9dvpa.streamlit.app/)
+[![Python 3.8+](https://img.shields.io/badge/Python-3.8+-blue)](https://www.python.org/)
 
 ---
 
 ## 📌 Overview
 
 This system helps finance teams automatically:
+
 1. **Predict freight costs** – Estimate fair shipping costs for vendor invoices
 2. **Flag risky invoices** – Detect anomalies and suspicious patterns
 
@@ -20,6 +21,7 @@ Built with **Machine Learning** and deployed on **Streamlit**.
 ## 🎯 Business Problem
 
 Finance teams spend hours manually reviewing vendor invoices to detect:
+
 - **Freight overcharging** – Abnormally high shipping costs
 - **Invoice anomalies** – Mismatches between invoice and purchase orders
 - **Fraudulent patterns** – Suspicious quantity or pricing discrepancies
@@ -31,7 +33,7 @@ Finance teams spend hours manually reviewing vendor invoices to detect:
 ## 🔑 Key Features
 
 - 🧠 **Regression Model** – Predicts freight costs with 97% accuracy
-- 🚨 **Classification Model** – Identifies risky invoices with 89% accuracy  
+- 🚨 **Classification Model** – Identifies risky invoices with 89% accuracy
 - 🖥️ **Interactive Web App** – User-friendly interface for instant predictions
 - 📊 **Confidence Scores** – Model confidence level for each prediction
 - 🚀 **Deployed & Live** – Ready to use on Streamlit Cloud
@@ -40,17 +42,20 @@ Finance teams spend hours manually reviewing vendor invoices to detect:
 
 ## 🚀 Live Demo
 
-**Try it here:** [https://mayuresh0711-vendor-invoice-intelligence-system-app-sszyjb.streamlit.app/](https://mayuresh0711-vendor-invoice-intelligence-system-app-sszyjb.streamlit.app/)
+**Try it here:** [https://vendorinvoiceintelligenceapp-8fvv4app6c2npeq8qz9dvpa.streamlit.app/](https://vendorinvoiceintelligenceapp-8fvv4app6c2npeq8qz9dvpa.streamlit.app/)
 
 ### Screenshots
 
 **Homepage**
+
 ![Application Home](images/app_home.png)
 
 **Freight Cost Prediction**
+
 ![Freight Prediction](images/freight_prediction.png)
 
 **Invoice Risk Flagging**
+
 ![Invoice Risk](images/invoice_risk.png)
 
 ---
@@ -58,6 +63,7 @@ Finance teams spend hours manually reviewing vendor invoices to detect:
 ## 💡 How It Works
 
 ### Model 1: Freight Cost Prediction (Regression)
+
 **Problem:** How do we know if a freight charge is fair?
 
 - **Input:** Invoice quantity & total amount
@@ -65,7 +71,8 @@ Finance teams spend hours manually reviewing vendor invoices to detect:
 - **Business Impact:** If actual freight is 30%+ higher than predicted, it may indicate overcharging
 - **Example:** Invoice of $18,500 → Predicted freight: $1,120 → If billed $1,500+, it's flagged
 
-### Model 2: Invoice Risk Flagging (Classification)  
+### Model 2: Invoice Risk Flagging (Classification)
+
 **Problem:** Which invoices need manual review before payment?
 
 - **Input:** Invoice quantity, amount, freight, total purchase details
@@ -81,11 +88,13 @@ Finance teams spend hours manually reviewing vendor invoices to detect:
 **Data Source:** SQLite database with vendor invoices and purchase order data
 
 **Features Used:**
+
 - Invoice quantity, amount, freight cost
 - Purchase order quantities and totals
 - Receiving performance metrics
 
 **Models:**
+
 - Freight prediction: Random Forest Regressor (tested Linear Regression & Decision Tree)
 - Risk flagging: Random Forest Classifier with feature scaling
 
@@ -104,7 +113,7 @@ Finance teams spend hours manually reviewing vendor invoices to detect:
 
 ## 🏗️ Project Workflow
 
-```
+```text
 1. DATA LOADING → SQLite database
    ↓
 2. PREPROCESSING → Handle missing values, feature engineering
@@ -126,7 +135,7 @@ Finance teams spend hours manually reviewing vendor invoices to detect:
 
 ## 📁 Project Structure
 
-```
+```text
 ├── Data/
 │   └── inventory.db                    # Source data (SQLite)
 ├── freight_cost_prediction/
@@ -152,12 +161,14 @@ Finance teams spend hours manually reviewing vendor invoices to detect:
 ## ⚡ Quick Start
 
 ### 1. Clone Repository
+
 ```bash
-git clone https://github.com/mayuresh0711/vendor-invoice-intelligence-system.git
-cd vendor-invoice-intelligence-system
+git clone https://github.com/Vaibhav0671/vendor_invoice_intelligence_portal.git
+cd vendor_invoice_intelligence_portal
 ```
 
 ### 2. Setup Environment
+
 ```bash
 python -m venv venv
 
@@ -169,17 +180,20 @@ source venv/bin/activate
 ```
 
 ### 3. Install Dependencies
+
 ```bash
 pip install -r requirements.txt
 ```
 
 ### 4. Train Models (Optional)
+
 ```bash
 python freight_cost_prediction/train.py
 python invoice_flagging/train.py
 ```
 
 ### 5. Run Application
+
 ```bash
 streamlit run app.py
 ```
@@ -195,17 +209,6 @@ Open: **http://localhost:8501**
 - **Pandas & NumPy** – Data manipulation
 - **Streamlit** – Web application
 - **SQLite** – Database
-
----
-
-## 📞 Contact
-
-**Mayuresh Ahire**  
-Data Analyst | Machine Learning
-
-- 🔗 **LinkedIn:** [linkedin.com/in/mayuresh-ahire-ab079b2a3/](https://www.linkedin.com/in/mayuresh-ahire-ab079b2a3/)
-- 🐙 **GitHub:** [github.com/mayuresh0711](https://github.com/mayuresh0711)
-- 📧 **Email:** ahiremayuresh4@gmail.com
 
 ---
 
